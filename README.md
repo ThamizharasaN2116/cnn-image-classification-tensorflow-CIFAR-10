@@ -773,37 +773,6 @@ def conv_net(x, keep_prob):
     #   output(x_tensor, num_outputs)
     out = output(fc2,10)
     return out
-#     # TODO: return output
-#                       l(x, 128, (5,5), (2,2), (3,3), (2,2))
-#     conv1 = conv2d_maxpool(x, 128, [5,5], [2,2], [3,3], [2,2])
-#     conv1 = tf.nn.dropout(conv1, keep_prob)
-#     conv2 = conv2d_maxpool(conv1, 256, (3,3), (1,1), (2,2), (2,2))
-#     #conv2 = tf.nn.dropout(conv2, keep_prob)
-#     #conv3 = conv2d_maxpool(conv2, 64, (2,2), (1,1), (5,5), (1,1))
-
-#     # TODO: Apply a Flatten Layer
-#     # Function Definition from Above:
-#     #   flatten(x_tensor)
-#     flat = flatten(conv2) 
-#     # TODO: Apply 1, 2, or 3 Fully Connected Layers
-#     #    Play around with different number of outputs
-#     # Function Definition from Above:
-#     #   fully_conn(x_tensor, num_outputs)
-#     #FC1 = fully_conn(flat, 2048)
-#     #FC2 = fully_conn(FC1, 2048)
-#     FC1 = fully_conn(flat, 500)
-#     FC1 = tf.nn.dropout(FC1, keep_prob)
-#     FC2 = fully_conn(FC1, 100)
-#     #FC2 = tf.nn.dropout(FC2, keep_prob)
-#     # TODO: Apply an Output Layer
-#     #    Set this to the number of classes
-#     # Function Definition from Above:
-#     #   output(x_tensor, num_outputs)
-#     OutPut = output(FC2, 10)
-    
-#     return OutPut 
-
-    
 
 
 """

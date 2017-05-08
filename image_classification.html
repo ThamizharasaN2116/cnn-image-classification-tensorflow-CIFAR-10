@@ -12549,7 +12549,7 @@ Tests Passed
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12606,7 +12606,7 @@ Tests Passed
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
@@ -12619,7 +12619,7 @@ Tests Passed
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">neural_net_image_input</span><span class="p">(</span><span class="n">image_shape</span><span class="p">):</span>
@@ -12711,7 +12711,7 @@ Keep Prob Tests Passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">conv2d_maxpool</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="n">conv_num_outputs</span><span class="p">,</span> <span class="n">conv_ksize</span><span class="p">,</span> <span class="n">conv_strides</span><span class="p">,</span> <span class="n">pool_ksize</span><span class="p">,</span> <span class="n">pool_strides</span><span class="p">):</span>
@@ -12788,7 +12788,7 @@ Tests Passed
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">flatten</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">):</span>
@@ -12846,7 +12846,7 @@ Tests Passed
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fully_conn</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="n">num_outputs</span><span class="p">):</span>
@@ -12907,7 +12907,7 @@ Tests Passed
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">output</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="n">num_outputs</span><span class="p">):</span>
@@ -12972,7 +12972,7 @@ Tests Passed
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">conv_net</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">keep_prob</span><span class="p">):</span>
@@ -13011,36 +13011,6 @@ Tests Passed
     <span class="c1">#   output(x_tensor, num_outputs)</span>
     <span class="n">out</span> <span class="o">=</span> <span class="n">output</span><span class="p">(</span><span class="n">fc2</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">out</span>
-<span class="c1">#     # TODO: return output</span>
-<span class="c1">#                       l(x, 128, (5,5), (2,2), (3,3), (2,2))</span>
-<span class="c1">#     conv1 = conv2d_maxpool(x, 128, [5,5], [2,2], [3,3], [2,2])</span>
-<span class="c1">#     conv1 = tf.nn.dropout(conv1, keep_prob)</span>
-<span class="c1">#     conv2 = conv2d_maxpool(conv1, 256, (3,3), (1,1), (2,2), (2,2))</span>
-<span class="c1">#     #conv2 = tf.nn.dropout(conv2, keep_prob)</span>
-<span class="c1">#     #conv3 = conv2d_maxpool(conv2, 64, (2,2), (1,1), (5,5), (1,1))</span>
-
-<span class="c1">#     # TODO: Apply a Flatten Layer</span>
-<span class="c1">#     # Function Definition from Above:</span>
-<span class="c1">#     #   flatten(x_tensor)</span>
-<span class="c1">#     flat = flatten(conv2) </span>
-<span class="c1">#     # TODO: Apply 1, 2, or 3 Fully Connected Layers</span>
-<span class="c1">#     #    Play around with different number of outputs</span>
-<span class="c1">#     # Function Definition from Above:</span>
-<span class="c1">#     #   fully_conn(x_tensor, num_outputs)</span>
-<span class="c1">#     #FC1 = fully_conn(flat, 2048)</span>
-<span class="c1">#     #FC2 = fully_conn(FC1, 2048)</span>
-<span class="c1">#     FC1 = fully_conn(flat, 500)</span>
-<span class="c1">#     FC1 = tf.nn.dropout(FC1, keep_prob)</span>
-<span class="c1">#     FC2 = fully_conn(FC1, 100)</span>
-<span class="c1">#     #FC2 = tf.nn.dropout(FC2, keep_prob)</span>
-<span class="c1">#     # TODO: Apply an Output Layer</span>
-<span class="c1">#     #    Set this to the number of classes</span>
-<span class="c1">#     # Function Definition from Above:</span>
-<span class="c1">#     #   output(x_tensor, num_outputs)</span>
-<span class="c1">#     OutPut = output(FC2, 10)</span>
-    
-<span class="c1">#     return OutPut </span>
-
     
 
 
